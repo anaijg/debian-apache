@@ -1,0 +1,9 @@
+version: "1.0"
+services:
+  apache:
+    image: debianana:1.0
+    container_name: segundo_debian
+    ports:
+      - 8088:80
+    volumes:
+      - ./html:/var/www/html
